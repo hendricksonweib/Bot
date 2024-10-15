@@ -2,7 +2,11 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    // Para comandos formais, poderia haver uma propriedade "data" aqui, mas não é necessária para modais
+    data: {
+        name: 'handleModalSubmit',
+        description: 'Handles form submission from modal interaction',
+    },
+    
     async execute(interaction) {
         try {
             // Coleta os dados do modal
